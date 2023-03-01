@@ -18,18 +18,18 @@
       {{ .Content }}
       <ul>
         {{ if .Site.Data.contact.phone }}
-        <li><strong>Phone: </strong>{{ .Site.Data.contact.phone }}</li>
+        <li><strong>电话： </strong>{{ .Site.Data.contact.phone }}</li>
         {{ end }}
         {{ if .Site.Data.contact.email }}
-        <li><strong>Email: </strong><a href="mailto:{{ .Site.Data.contact.email }}">
+        <li><strong>邮箱： </strong><a href="mailto:{{ .Site.Data.contact.email }}">
             {{ .Site.Data.contact.email }}</a></li>
         {{ end }}
         {{ if .Site.Data.contact.address }}
-        <li style="white-space: pre-wrap;"><strong>Address: </strong><br>{{ .Site.Data.contact.address }}</li>
+        <li style="white-space: pre-wrap;"><strong>地址： </strong><br>{{ .Site.Data.contact.address }}</li>
         {{ end }}
       </ul>
       {{ if .Site.Data.contact.hours }}
-      <h4 class="mt-4">Business Hours</h4>
+      <h4 class="mt-4">办公时间</h4>
       <table class="table table-sm opening-hours-table">
         {{ range .Site.Data.contact.hours }}
         <tr>
