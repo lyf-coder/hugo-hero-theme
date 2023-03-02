@@ -16,6 +16,9 @@
   <div class="row">
     <div class="col-12 col-md-8">
       {{ .Content }}
+      {{ if .Site.Data.contact.weixinImg }}
+      <strong>微信： </strong> <img src="{{ .Site.Data.contact.weixinImg }}" width="150">
+      {{ end }}
       <ul>
         {{ if .Site.Data.contact.phone }}
         <li><strong>电话： </strong>{{ .Site.Data.contact.phone }}</li>
